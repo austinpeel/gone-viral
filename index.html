@@ -26,9 +26,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/WebGLBuild.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WebGLBuild.data.gz",
-        frameworkUrl: buildUrl + "/WebGLBuild.framework.js.gz",
-        codeUrl: buildUrl + "/WebGLBuild.wasm.gz",
+        dataUrl: buildUrl + "/WebGLBuild.data",
+        frameworkUrl: buildUrl + "/WebGLBuild.framework.js",
+        codeUrl: buildUrl + "/WebGLBuild.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "austinpeel",
         productName: "gone_viral",
@@ -45,8 +45,8 @@
         container.className = "unity-mobile";
         config.devicePixelRatio = 1;
       } else {
-        canvas.style.width = "1600px";
-        canvas.style.height = "900px";
+        canvas.style.width = "1200px";
+        canvas.style.height = "675px";
       }
       loadingBar.style.display = "block";
 
