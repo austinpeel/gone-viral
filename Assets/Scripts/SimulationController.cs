@@ -152,6 +152,7 @@ public class SimulationController : MonoBehaviour
                 {
                     // Decide if other person should get infected
                     // TODO Calculate this more properly
+                    infectionRate = Mathf.Clamp(infectionRate, 0.005f, 1);
                     int randomDraw = (infectionRate == 1) ? 0 : Random.Range(0, (int)Mathf.Round(1 / (infectionRate * Time.deltaTime)));
                     if (randomDraw == 0)
                     {
